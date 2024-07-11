@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Disable Instagram Reels",
+    "version": "1.0",
+    "description": "A Chrome extension to disable and remove the Reels icon on Instagram.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.instagram.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  
